@@ -9,8 +9,9 @@ services:
       - "80:3000"
     volumes:
       - ./AppFrontEnd/:/AppFrontEnd
-
       - '/AppFrontEnd/node_modules'
+    environment:
+      NODE_ENV: development
 
   api:
     build: 
