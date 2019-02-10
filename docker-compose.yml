@@ -1,0 +1,30 @@
+version: '3.2'
+services:
+
+
+      
+  ui:
+    build: AppFrontEnd/.
+    ports:
+      - "80:3000"
+    volumes:
+      - ./AppFrontEnd/:/AppFrontEnd
+
+  api:
+    build: 
+      context: AppApi/
+      dockerfile: Dockerfile.Api
+    ports:
+     - "5001:5001"
+    volumes:
+      - ./AppApi/:/AppApi/
+
+  model:
+    build: 
+      context: Models/
+      dockerfile: Dockerfile
+    ports:
+     - "5002:5002"
+    volumes:
+      - ./Models/:/Models/
+      
