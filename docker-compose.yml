@@ -10,6 +10,8 @@ services:
     volumes:
       - ./AppFrontEnd/:/AppFrontEnd
 
+      - '/AppFrontEnd/node_modules'
+
   api:
     build: 
       context: AppApi/
