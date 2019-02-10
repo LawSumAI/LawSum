@@ -1,0 +1,9 @@
+[submodule "AppApi"]
+	path = AppApi
+	url = git@github.com:LawSumAI/AppApi.git
+[submodule "Models"]
+	path = Models
+	url = git@github.com:LawSumAI/Models.git
+[submodule "AppFrontEnd"]
+	path = AppFrontEnd
+	url = git@github.com:LawSumAI/AppFrontEnd.git
