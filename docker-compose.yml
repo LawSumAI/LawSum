@@ -1,7 +1,7 @@
 version: '3.2'
 
-volumes:
-  ui_nm:
+# volumes:
+#   ui_nm:
 
 services:
       
@@ -11,7 +11,7 @@ services:
       - "80:3000"
     volumes:
       - ./AppFrontEnd:/AppFrontEnd
-      - ui_nm:/AppFrontEnd/node_modules/
+      - /AppFrontEnd/node_modules/
     environment:
       NODE_ENV: development
 
